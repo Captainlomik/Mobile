@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CubeGame</string>
+    <string name="Привет">Привет</string>
+    <string name="User">Игрок: %1$d\n%2$s</string>
+    <string name="Robot">Противник: %1$d\n%2$s</string>
+
+    <string name="buttonRandom">Кинуть кубик</string>
+    <string name="Rules">Игрок и робот бросают 2 кубика.\nЕсли выподает дубль, то кубики бросаются снова.\nВыигрывает тот, кто быстрей наберет 100 очков.</string>
+    <string name="Win">Ты выиграл!</string>
+    <string name="Daw">Ничья. Попробуй еще.</string>
+    <string name="Losing">Ты проиграл =(</string>
+    <string name="Reboot">Начать сначала</string>
+</resources>
