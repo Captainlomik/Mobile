@@ -20,19 +20,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="7dp"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <RadioButton
             android:id="@+id/redRadio"
-            android:layout_width="match_parent"
+            android:layout_width="217dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:buttonTint="@color/red" />
+            android:buttonTint="@color/red"
+            android:visibility="visible" />
 
 
         <RadioButton
             android:id="@+id/yellowRadio"
-            android:layout_width="match_parent"
+            android:layout_width="217dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:buttonTint="@color/yellow" />
