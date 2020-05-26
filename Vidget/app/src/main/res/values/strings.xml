@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Vidget</string>
+    <string name="widget_name">Виджет</string>
+    <string name="widget_text">Текст на виджете</string>
+    <string name="redColor">Красный</string>
+    <string name="blueColor">Голубой</string>
+    <string name="yellowColor">Желтый</string>
+    <string name="widget_edit_text">Введите текст заметки</string>
+    <string name="create_note_btn_text">Создать</string>
+</resources>
