@@ -6,39 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".WinActivity">
 
-    <TextView
-        android:id="@+id/winText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="169dp"
-        android:layout_marginLeft="169dp"
-        android:layout_marginTop="492dp"
-        android:layout_marginEnd="183dp"
-        android:layout_marginRight="183dp"
-        android:text="@string/Win"
-        android:textSize="36sp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.396"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="325dp"
-        android:layout_height="260dp"
-        android:layout_marginStart="43dp"
-        android:layout_marginLeft="43dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="43dp"
-        android:layout_marginRight="43dp"
-        android:layout_marginBottom="87dp"
-        android:contentDescription="@string/Win"
-        app:layout_constraintBottom_toTopOf="@+id/winText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/unnamed" />
+        <TextView
+            android:id="@+id/winText"
+            android:layout_width="219dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="169dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="183dp"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:text="@string/Win"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="280dp"
+            android:layout_height="206dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginBottom="50dp"
+            android:contentDescription="@string/Win"
+            app:srcCompat="@drawable/unnamed" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

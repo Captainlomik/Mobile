@@ -7,89 +7,64 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/Robot"
-        android:layout_width="373dp"
-        android:layout_height="111dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginBottom="250dp"
-        android:text="@string/Robot"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.71"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/User"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/Rules"
-        android:layout_width="356dp"
-        android:layout_height="118dp"
-        android:layout_marginStart="46dp"
-        android:layout_marginLeft="46dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="66dp"
-        android:layout_marginRight="66dp"
-        android:text="@string/Rules"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/User"
-        android:layout_width="338dp"
-        android:layout_height="102dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginLeft="27dp"
-        android:layout_marginTop="37dp"
-        android:layout_marginEnd="46dp"
-        android:layout_marginRight="46dp"
-        android:text="@string/User"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/Robot"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Rules" />
-
-    <Button
-        android:id="@+id/buttonRandom"
-        android:layout_width="303dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginLeft="56dp"
-        android:layout_marginTop="130dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginRight="52dp"
-        android:layout_marginBottom="184dp"
-        android:onClick="onClick"
-        android:text="@string/buttonRandom"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Robot"
-        app:layout_constraintVertical_bias="0.561" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
-    <Button
-        android:id="@+id/reboot"
-        android:layout_width="294dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="61dp"
-        android:layout_marginLeft="61dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginRight="56dp"
-        android:onClick="onClick2"
-        android:text="@string/Reboot"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonRandom"
-        app:layout_constraintVertical_bias="0.0" />
+        <TextView
+            android:id="@+id/Rules"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/Rules"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/Robot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:text="@string/Robot"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/User"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="46dp"
+            android:padding="10dp"
+            android:text="@string/User"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buttonRandom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="onClick"
+            android:text="@string/buttonRandom" />
+
+        <Button
+            android:id="@+id/reboot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="61dp"
+            android:layout_marginEnd="56dp"
+            android:onClick="onClick2"
+            android:text="@string/Reboot" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
